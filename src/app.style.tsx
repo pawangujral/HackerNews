@@ -10,5 +10,12 @@ export const Header = styled.header`
     letter-spacing: 0.05em;
     margin: 20px 0 0 0;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      margin-left: 20px;
+    }
   }
 `;

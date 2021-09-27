@@ -15,6 +15,7 @@ const GlobalStyle = styled.createGlobalStyle`
     --accent-color: #c5c6ca;
     --highlight-color: #f7e277;
     --date-color: #fabca1;
+    --loader-color: #ff4d00;
   }
 
   * {
@@ -49,11 +50,6 @@ const GlobalStyle = styled.createGlobalStyle`
   h6 {
     font-weight: 300;
     margin: 30px 0 15px 0;
-
-    span {
-      color: var(--primary-color);
-      font-weight: 700;
-    }
   }
 
   @media (max-width: 576px) {
