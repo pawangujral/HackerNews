@@ -1,4 +1,5 @@
 const { resolve, join } = require('path');
+const autoPrefixer = require('autoprefixer');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
@@ -55,6 +56,7 @@ const configuration = {
           {
             loader: 'postcss-loader',
             options: {
+              plugins: () => [autoPrefixer()],
               sourceMap: true,
             },
           },
