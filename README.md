@@ -13,7 +13,7 @@ API Spec
   https://hacker-news.firebaseio.com/v0/item/{itemId}.json?print=pretty
   https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty
 
-Hosted on heroku: [woof](https://woof-pawangujral.herokuapp.com/)
+Hosted on heroku: [woof](https://hackernews-pawangujral.herokuapp.com/)
 
 ## Getting Started
 
