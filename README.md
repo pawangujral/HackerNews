@@ -1,6 +1,17 @@
-# Woof Woof Application
+# Hacker News Application
 
-Dog Image recognition react app with tensorflow/tfjs-models
+App to display Hacker News in list using hacker news API. User can read title &
+click on it read further.
+
+API Spec
+
+- Whole spec https://github.com/HackerNews/API
+
+- top stories api
+  https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty
+- fetch individual story
+  https://hacker-news.firebaseio.com/v0/item/{itemId}.json?print=pretty
+  https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty
 
 Hosted on heroku: [woof](https://woof-pawangujral.herokuapp.com/)
 
@@ -14,7 +25,7 @@ Open bash/terminal and type following lines in your prefered folder (Make sure
 Git in installed locally).
 
 ```bash
-git clone https://github.com/pawangujral/woof.git
+git clone https://github.com/pawangujral/HackerNews.git
 
 // check git current branch
 git branch
@@ -28,7 +39,7 @@ git checkout main
 To install project dependencies, you can run at root folder:
 
 ```bash
-cd woof
+cd hackernews
 npm install
 ```
 
@@ -104,31 +115,19 @@ order-tracking
     ├── app.tsx
     ├── index.html
     ├── index.tsx
-    ├── routes.ts
     ├── manifest.json
     ├── assets
     │    ├── images
     ├── components
-        ├── button
-        │    ├── button.style.ts
-        │    ├── button.tsx
+        ├── list
+        │    ├── list.style.ts
+        │    ├── list.tsx
         │    ├── index.ts
-        ├── input
-        │    ├── input.style.ts
-        │    ├── input.tsx
-        │    ├── index.ts
-        ├── preview
-        │    ├── preview.style.ts
-        │    ├── preview.tsx
-        │    ├── index.ts
-        ├── thumbnail
-        │    ├── thumbnail.style.ts
-        │    ├── thumbnail.tsx
+        ├── loader
+        │    ├── loader.style.ts
+        │    ├── loader.tsx
         │    ├── index.ts
     ├── hooks
-        ├── use-lazy
-        │    ├── use-lazy.tsx
-        │    ├── index.ts
         ├── use-toasts
         │    ├── use-toasts.style.ts
         │    ├── use-toasts.tsx
@@ -138,28 +137,14 @@ order-tracking
     ├── utils
         ├── constants.ts
         ├── types.ts
-        ├── utils.ts
     ├── views
-        ├── common
-        │    ├── header
-        │    │    ├── header.tsx
-        │    │    ├── header.style.ts
-        │    │    ├── index.ts
-        │    ├── not-found
-        │    │    ├── not-found.tsx
-        │    │    ├── not-found.style.ts
-        │    │    ├── index.ts
-        ├── gallery
-        │    ├── gallery.tsx
-        │    ├── gallery.style.ts
+        ├── collections
+        │    ├── collections.tsx
+        │    ├── collections.style.ts
         │    ├── index.ts
-        ├── main
-        │    ├── main.style.ts
-        │    ├── main.tsx
-        │    ├── index.ts
-        ├── uploader
-        │    ├── uploader.style.ts
-        │    ├── uploader.tsx
+        ├── stories
+        │    ├── stories.style.ts
+        │    ├── stories.tsx
         │    ├── index.ts
 
 ```
@@ -198,7 +183,6 @@ _Note: this is currently in TODO list & not yet implemented._
 
 ## Links
 
-- [@tensorflow/tfjs-models](https://github.com/tensorflow/tfjs-models/tree/master/mobilenet)
 - [React](https://reactjs.org/)
 - [styled-components](http://styled-components.com/)
 - [React Testing Libary](https://testing-library.com/docs/react-testing-library/intro/)
