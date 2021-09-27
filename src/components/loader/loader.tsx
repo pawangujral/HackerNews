@@ -1,13 +1,11 @@
 import * as React from 'react';
-import { LoaderBlock } from './loader.style';
 import LoaderImg from '_/assets/images/loader.svg';
+import { LoaderBlock } from './loader.style';
 
-const Loader: React.FC = (): JSX.Element => {
-  return (
-    <LoaderBlock>
-      <img src={LoaderImg} alt="Please wait..." />
-    </LoaderBlock>
-  );
-};
+const Loader: React.FC = (): JSX.Element => (
+  <LoaderBlock>
+    <img src={LoaderImg} alt="Please wait..." />
+  </LoaderBlock>
+);
 
 export default Loader;

@@ -40,7 +40,7 @@ To install project dependencies, you can run at root folder:
 
 ```bash
 cd hackernews
-npm install
+yarn install
 ```
 
 #### Third-party utility libraries list
