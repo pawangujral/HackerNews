@@ -1,4 +1,4 @@
-import Loader from '_/components/Loader';
+import Animation from '_/components/animation';
 import { NEWS_API_ENDPOINT_TOP_STORIES } from '_/utils/constants';
 import * as React from 'react';
 import Stories from '_/views/stories';
@@ -20,7 +20,7 @@ const Collections: React.FC = (): JSX.Element => {
   }, []);
 
   return (
-    <main>{data.length ? <Stories collection={data} /> : <Loader />}</main>
+    <main>{data.length ? <Stories collection={data} /> : <Animation />}</main>
   );
 };
 

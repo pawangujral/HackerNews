@@ -14,9 +14,10 @@ const breatheAnimation = keyframes`
 export const LoaderBlock = styled.div`
   color: var(--loader-color);
   font-size: 100px;
+  margin-top: 30px;
   text-align: center;
 `;
 
-export const Animation = styled(FiLoader)`
+export const IconBlock = styled(FiLoader)`
   animation: ${breatheAnimation} 2s infinite linear;
 `;

@@ -1,5 +1,5 @@
 import List from '_/components/list';
-import Loader from '_/components/loader';
+import Animation from '_/components/animation';
 import { NEWS_API_ENDPOINT_BASE } from '_/utils/constants';
 import {
   ModelResponseType,
@@ -48,7 +48,7 @@ const Stories: React.FC<StoriesPropertyType> = ({
     <>
       {data.length > 0 && <List collection={data} />}
       {isFetching ? (
-        <Loader />
+        <Animation />
       ) : (
         <LoadMore onClick={handleFetchMore}>Load More</LoadMore>
       )}
